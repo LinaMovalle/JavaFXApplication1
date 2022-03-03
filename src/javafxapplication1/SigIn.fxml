@@ -9,8 +9,7 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-
-<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0" styleClass="blue-panel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1">
+<VBox alignment="CENTER_LEFT" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="480.0" prefWidth="480.0" styleClass="blue-panel" stylesheets="@styles.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="javafxapplication1.SigInController">
    <children>
       <Label text="Login" textFill="#2196f3">
          <font>
@@ -38,7 +37,7 @@
             <Insets left="15.0" right="15.0" top="20.0" />
          </VBox.margin>
       </HBox>
-      <Button mnemonicParsing="false" prefHeight="38.0" prefWidth="443.0" styleClass="blue-btn" text=" Sign In" VBox.vgrow="ALWAYS">
+      <Button id="btn_signIn" mnemonicParsing="false" onAction="#accion" prefHeight="38.0" prefWidth="443.0" styleClass="blue-btn" text=" Sign In" VBox.vgrow="ALWAYS">
          <VBox.margin>
             <Insets left="15.0" right="15.0" top="20.0" />
          </VBox.margin>
@@ -46,5 +45,10 @@
             <Font size="17.0" />
          </font>
       </Button>
+      <TextField fx:id="tf_show">
+         <VBox.margin>
+            <Insets left="10.0" right="10.0" top="20.0" />
+         </VBox.margin>
+      </TextField>
    </children>
 </VBox>
